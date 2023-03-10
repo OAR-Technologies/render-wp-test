@@ -7,4 +7,6 @@ RUN apk add shadow
 
 RUN usermod -s /bin/bash www-data
 RUN chown www-data:www-data /var/www
+RUN chown www-data:www-data /var/www/html
+
 USER www-data:www-data
