@@ -3,6 +3,7 @@
 FROM wordpress:6.1-php8.1-fpm-alpine
 
 RUN apk update
+RUN apk add shadow
 
 RUN usermod -s /bin/bash www-data
 RUN chown www-data:www-data /var/www
